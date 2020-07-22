@@ -1,0 +1,87 @@
+/* css reset */
+*{margin:0px;
+padding:0px;}
+
+/* -----------------Body----------------------- */
+.grid{
+ 
+    text-align: center;
+    justify-content: center;
+   }
+.box{
+     display: inline-block;
+     margin: -2px;
+     width: 85px;
+    height:85px; 
+    background-color: white;
+    border:1px solid black;
+}
+    
+.boxb{
+     display: inline-block;
+     margin: -2px;
+     width: 85px;
+    height:85px; 
+    border:1px solid black;
+     background-color: black;
+     animation: boxb 1s linear infinite;
+   }
+   i{
+    top:40px;
+    position: relative;
+   }
+/* -------------------------Effects-------------------------- */
+
+.boxb:hover{
+    background-color:#03e9f4;
+    box-shadow:   0px 0px 5px #03e9f4,
+                  0px 0px 5px #03e9f4,
+                  0px 0px 5px #03e9f4,
+                  0px 0px 5px #03e9f4;
+    border: 1px solid  #03e9f4;
+    top:0;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(90deg ,transparent,#03e9f4);
+   
+    
+}
+
+.box:hover{
+    
+    background-color:violet;
+    box-shadow:   0px 0px 5px violet,
+                  0px 0px 5px violet,
+                  0px 0px 5px violet,
+                  0px 0px 5px violet;
+    border: 1px solid  violet;
+    top:0;
+    left: 0;
+    background: linear-gradient(90deg ,transparent,violet);
+    
+    width: 100px;
+    height: 100px;
+
+}
+.boxb:hover i:nth-child(odd){
+    position: relative;
+    transform: translate(30%,30%);
+    transition: 0.1s;
+    font-size: 40px;
+    color: #000;
+}
+.box:hover i:nth-child(odd){
+    position: relative;
+    transform: translate(30%,30%);
+    transition: 0.1s;
+    font-size: 40px;
+    color:white;
+}
+.boxb>i{
+    align-items: center;
+    justify-content: center;
+    color: white;
+   
+}
+
